@@ -1,0 +1,41 @@
+-- analyze total quantity of products sold from every branch  
+SELECT [Product DT].[Manufacturer].members ON COLUMNS,
+NON EMPTY[Branch DT].[Branch Address].MEMBERS ON ROWS
+FROM [Case Study A]
+
+
+-- how many acer have been sold from each branch
+
+SELECT [Product DT].[Manufacturer].[ACER] ON COLUMNS,
+NON EMPTY[Branch DT].[Branch Address].MEMBERS ON ROWS
+FROM [Case Study A]
+
+
+SELECT {[Product DT].[Manufacturer].[ACER],[Product DT].[Manufacturer].[HP]} ON COLUMNS,
+NON EMPTY [Branch DT].[Branch PLACE].MEMBERS ON ROWS
+FROM [Case Study A]
+
+
+SELECT {[Product DT].[Manufacturer].[ACER],[HP]} ON COLUMNS,
+NON EMPTY [Branch DT].[Branch PLACE].MEMBERS ON ROWS
+FROM [Case Study A]
+
+
+-- what was plannned acer and hp sale from each branch each month
+
+SELECT {[Product DT].[Manufacturer].[ACER],[HP]} ON COLUMNS,
+non empty ([Branch DT].[Branch PLACE].MEMBERS,[Time 1].[month].MEMBERS) ON ROWS
+FROM [Case Study A]
+WHERE [Measures].[PLANNED QTY]
+
+
+
+SELECT {[Product DT].[Manufacturer].[ACER],[Product DT].[Manufacturer].[HP]} ON ROWS,
+NON EMPTY ([Measures].[T_Diff],[Time 1].[Month].MEMBERS) ON COLUMNS
+FROM [Case Study A]
+
+SELECT {[Product DT].[Manufacturer].[ACER],[Product DT].[Manufacturer].[HP]} ON Columns,
+NON EMPTY ([Measures].[T_Diff],[Time 1].[Month].MEMBERS) ON Rows
+FROM [Case Study A]
+
+
