@@ -1,2 +1,2 @@
 # datawarehouse_project
-Datawarehouse Semester Project
+Semester project on topic Fee module based on course Data Warehouse CS-3227
