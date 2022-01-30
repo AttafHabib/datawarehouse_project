@@ -1,0 +1,206 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="3b53ff68-d090-4b8f-882c-a6146b677f78" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Fee Records</ID>
+  <Name>Fee Records</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Fee Records</DataSourceID>
+  <Schema>
+    <xs:schema id="Fee_x0020_Records" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Fee_x0020_Records" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="c37ff3be-ca70-4e3b-8fc3-2adcdff22831">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_dues" msprop:design-time-name="5f7771a0-5c93-461e-a4a9-0cb14ff05b5b" msprop:DbTableName="dues" msprop:FriendlyName="dues" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="dues_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="99f5e90c-5ad3-404c-a69d-1c51f3848e47" msprop:DbColumnName="dues_id" msprop:FriendlyName="dues_id" type="xs:int" />
+                  <xs:element name="dues_type" msprop:design-time-name="5e3ebfc5-4881-4b25-a249-743b6803c2e7" msprop:DbColumnName="dues_type" msprop:FriendlyName="dues_type">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="installment_no" msprop:design-time-name="25f54fd6-8fc9-41f6-a118-42d8f9d53e38" msprop:DbColumnName="installment_no" msprop:FriendlyName="installment_no" type="xs:int" />
+                  <xs:element name="year" msprop:design-time-name="077a406a-476a-4286-8111-0b8f1a8c41bd" msprop:DbColumnName="year" msprop:FriendlyName="year" type="xs:int" />
+                  <xs:element name="debit" msprop:design-time-name="6c0aa25b-2341-4cc2-8ec6-4a323567ded4" msprop:DbColumnName="debit" msprop:FriendlyName="debit" type="xs:int" />
+                  <xs:element name="credit" msprop:design-time-name="07a2c864-6e08-4c55-899d-7e4d21914b7c" msprop:DbColumnName="credit" msprop:FriendlyName="credit" type="xs:int" />
+                  <xs:element name="description" msprop:design-time-name="0ede0c6d-5347-46a2-a121-da9b67bacaf4" msprop:DbColumnName="description" msprop:FriendlyName="description" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="due_date" msprop:design-time-name="453f4e9b-5262-426c-acf3-92740ef92e47" msprop:DbColumnName="due_date" msprop:FriendlyName="due_date" type="xs:dateTime" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_fee_concession" msprop:design-time-name="a2df44e3-25e9-4e54-a371-df32567b59f5" msprop:DbTableName="fee_concession" msprop:FriendlyName="fee_concession" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="fee_conc_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="cdc7b73f-135f-4a05-a2b9-2ec0b5d8a099" msprop:DbColumnName="fee_conc_id" msprop:FriendlyName="fee_conc_id" type="xs:int" />
+                  <xs:element name="concession_type" msprop:design-time-name="df7c35e6-bfc4-4025-b3be-41b097d5b6f4" msprop:DbColumnName="concession_type" msprop:FriendlyName="concession_type">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="amount" msprop:design-time-name="17d884ff-1279-4f7a-a9d9-b05666f6a816" msprop:DbColumnName="amount" msprop:FriendlyName="amount" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_fee_ft" msprop:design-time-name="47272fb1-3629-4545-a5af-0b13d6d23b27" msprop:DbTableName="fee_ft" msprop:FriendlyName="fee_ft" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="dues_id" msprop:design-time-name="018e7f5b-8757-45fa-a818-b4fdca121bef" msprop:DbColumnName="dues_id" msprop:FriendlyName="dues_id" type="xs:int" minOccurs="0" />
+                  <xs:element name="concession_id" msprop:design-time-name="413ad0c5-497b-40ca-bff1-93d3657484dd" msprop:DbColumnName="concession_id" msprop:FriendlyName="concession_id" type="xs:int" minOccurs="0" />
+                  <xs:element name="scholarship_id" msprop:design-time-name="ac756c97-0f5f-4f22-9c08-74d1c6bc5137" msprop:DbColumnName="scholarship_id" msprop:FriendlyName="scholarship_id" type="xs:int" minOccurs="0" />
+                  <xs:element name="refund_id" msprop:design-time-name="d64f38ac-1866-497b-b8b2-6c01c187103b" msprop:DbColumnName="refund_id" msprop:FriendlyName="refund_id" type="xs:int" minOccurs="0" />
+                  <xs:element name="time_id" msprop:design-time-name="46486af4-4b51-419c-a2e8-38d0c1ee5ce0" msprop:DbColumnName="time_id" msprop:FriendlyName="time_id" type="xs:int" minOccurs="0" />
+                  <xs:element name="scholarship_sum" msprop:design-time-name="b332fb6a-5a86-46a8-bb63-5d60d10ca96d" msprop:DbColumnName="scholarship_sum" msprop:FriendlyName="scholarship_sum" type="xs:int" minOccurs="0" />
+                  <xs:element name="refund_amount" msprop:design-time-name="87ead37a-1bdb-4ad8-a59d-74e79052414e" msprop:DbColumnName="refund_amount" msprop:FriendlyName="refund_amount" type="xs:int" minOccurs="0" />
+                  <xs:element name="dues_amount" msprop:design-time-name="bcb455ea-15d6-4d69-bd30-244ed483516b" msprop:DbColumnName="dues_amount" msprop:FriendlyName="dues_amount" type="xs:int" minOccurs="0" />
+                  <xs:element name="concession_amount" msprop:design-time-name="3a3db81b-889f-4494-875f-4cea0b7d6aab" msprop:DbColumnName="concession_amount" msprop:FriendlyName="concession_amount" type="xs:int" minOccurs="0" />
+                  <xs:element name="debit_amount" msprop:design-time-name="06e3eda5-25d2-4341-b4bd-f00e1a972c18" msprop:DbColumnName="debit_amount" msprop:FriendlyName="debit_amount" type="xs:int" minOccurs="0" />
+                  <xs:element name="credit_amount" msprop:design-time-name="90aeb46c-7a06-4e78-9f17-10e6d9399cb5" msprop:DbColumnName="credit_amount" msprop:FriendlyName="credit_amount" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_refund" msprop:design-time-name="67be82e8-4d05-4718-943f-9d5a22a22b4e" msprop:DbTableName="refund" msprop:FriendlyName="refund" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="refund_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="131559f0-6e4b-41a4-b440-6187a45939e0" msprop:DbColumnName="refund_id" msprop:FriendlyName="refund_id" type="xs:int" />
+                  <xs:element name="amount" msprop:design-time-name="d1a861cf-e9da-4e20-994c-1a46cbf5c60e" msprop:DbColumnName="amount" msprop:FriendlyName="amount" type="xs:int" />
+                  <xs:element name="description" msprop:design-time-name="89ad31b6-09db-41be-a970-89ef1a2be33b" msprop:DbColumnName="description" msprop:FriendlyName="description" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="refund_type" msprop:design-time-name="6ab6d7c7-a693-4874-b29a-8053f4bf73cb" msprop:DbColumnName="refund_type" msprop:FriendlyName="refund_type">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_scholarship_dues" msprop:design-time-name="6f093f51-d9bb-4585-bda1-fd060487239d" msprop:DbTableName="scholarship_dues" msprop:FriendlyName="scholarship_dues" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="scholarship_dues_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="830c66ea-8980-4cea-a6c8-f129b21cb1c9" msprop:DbColumnName="scholarship_dues_id" msprop:FriendlyName="scholarship_dues_id" type="xs:int" />
+                  <xs:element name="amount" msprop:design-time-name="c066424f-bec0-4a37-ab0c-d0e35feffadf" msprop:DbColumnName="amount" msprop:FriendlyName="amount" type="xs:int" />
+                  <xs:element name="scholarship_type" msprop:design-time-name="ac2d0a86-8fe2-457c-88b6-ccf1797f2112" msprop:DbColumnName="scholarship_type" msprop:FriendlyName="scholarship_type">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="remarks" msprop:design-time-name="51179818-076b-4636-a303-395c77ba90d0" msprop:DbColumnName="remarks" msprop:FriendlyName="remarks" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_time" msprop:design-time-name="b5c641e1-a4e9-4e17-92ec-9ca6f96ef139" msprop:DbTableName="time" msprop:FriendlyName="time" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="e123e413-65b0-4808-9b08-9c4c5d083e60" msprop:DbColumnName="id" msprop:FriendlyName="id" type="xs:int" />
+                  <xs:element name="year" msprop:design-time-name="679e5289-4c94-44f6-a06a-1e5683b2f720" msprop:DbColumnName="year" msprop:FriendlyName="year" type="xs:int" minOccurs="0" />
+                  <xs:element name="month" msprop:design-time-name="4891f8c5-64ee-4673-ae45-38587511c589" msprop:DbColumnName="month" msprop:FriendlyName="month" type="xs:int" minOccurs="0" />
+                  <xs:element name="day" msprop:design-time-name="0ac5e74f-2646-42ab-8798-5b5c666f1679" msprop:DbColumnName="day" msprop:FriendlyName="day" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dues" />
+          <xs:field xpath="dues_id" />
+        </xs:unique>
+        <xs:unique name="dbo_fee_concession_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_fee_concession" />
+          <xs:field xpath="fee_conc_id" />
+        </xs:unique>
+        <xs:unique name="dbo_refund_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_refund" />
+          <xs:field xpath="refund_id" />
+        </xs:unique>
+        <xs:unique name="dbo_scholarship_dues_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_scholarship_dues" />
+          <xs:field xpath="scholarship_dues_id" />
+        </xs:unique>
+        <xs:unique name="dbo_time_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_time" />
+          <xs:field xpath="id" />
+        </xs:unique>
+        <xs:keyref name="FK__fee_ft__time_id__68487DD7" refer="dbo_time_Constraint1">
+          <xs:selector xpath=".//dbo_fee_ft" />
+          <xs:field xpath="time_id" />
+        </xs:keyref>
+        <xs:keyref name="FK__fee_ft__refund_i__6754599E" refer="dbo_refund_Constraint1">
+          <xs:selector xpath=".//dbo_fee_ft" />
+          <xs:field xpath="refund_id" />
+        </xs:keyref>
+        <xs:keyref name="FK__fee_ft__dues_id__6477ECF3" refer="Constraint1">
+          <xs:selector xpath=".//dbo_fee_ft" />
+          <xs:field xpath="dues_id" />
+        </xs:keyref>
+        <xs:keyref name="FK__fee_ft__concessi__656C112C" refer="dbo_fee_concession_Constraint1">
+          <xs:selector xpath=".//dbo_fee_ft" />
+          <xs:field xpath="concession_id" />
+        </xs:keyref>
+        <xs:keyref name="FK__fee_ft__scholars__66603565" refer="dbo_scholarship_dues_Constraint1">
+          <xs:selector xpath=".//dbo_fee_ft" />
+          <xs:field xpath="scholarship_id" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Fee_x0020_Records xmlns="" />
+  </Schema>
+</DataSourceView>

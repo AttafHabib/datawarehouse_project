@@ -1,0 +1,344 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="4f965649-217f-4d3d-84e8-8a528fe4f96f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Fee Records</ID>
+  <Name>Fee Records</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="651e3373-cc03-4578-bb7b-abd0f4ec0463">
+      <ID>Dues</ID>
+      <Name>Dues</Name>
+      <DimensionID>Dues</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="93bcecfa-7d3e-47d9-9d2f-3361e9a46674">
+          <AttributeID>Dues Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="11a99fce-1156-45ba-b621-33d28b8f90cc">
+          <AttributeID>Dues Type</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3bcf6485-0cbc-4629-b16f-c52e99e5d89e">
+          <AttributeID>Installment No</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="887758bc-fc18-42c1-b28e-cb70075fa9aa">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d80bc3b7-f956-4bf9-b5cc-296d62ee855f">
+          <AttributeID>Debit</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e90fe552-a6c9-42d5-999a-2659c8cb9dc4">
+          <AttributeID>Credit</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5261aa17-2ab8-483e-b8e7-d65e7dc6d1bc">
+          <AttributeID>Description</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8f93bce7-3015-4ae8-bc52-d5032169d8ff">
+          <AttributeID>Due Date</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="befe3a13-c7f4-4afc-8d6b-b37a48e50e6e">
+      <ID>Refund</ID>
+      <Name>Refund</Name>
+      <DimensionID>Refund</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="7279958e-25d8-47d3-9afa-d10ac9849cc5">
+          <AttributeID>Refund Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9fa73528-7ad2-497f-87a4-20269ffb762c">
+          <AttributeID>Amount</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a5aec284-bab5-4558-9d68-c93314b0681a">
+          <AttributeID>Description</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2442b0ab-3774-4de0-a497-0c1e7c5b93d6">
+          <AttributeID>Refund Type</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="efebd8cd-71a9-40f1-a238-2b2e17b3a40d">
+      <ID>Time</ID>
+      <Name>Time</Name>
+      <DimensionID>Time</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="63df73d0-e449-4ef5-93b6-5e83d8d75e1a">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f679a4ca-1fc8-4b91-9afe-77333817b2f9">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a8d981d4-d23c-4b21-a565-65689f6f0ef0">
+          <AttributeID>Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f76befd5-ef32-4d5b-9ccd-4e59944197b4">
+          <AttributeID>Day</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="467aa51d-3866-45ba-85ab-4eff06e20dcb">
+      <ID>Scholarship Dues</ID>
+      <Name>Scholarship Dues</Name>
+      <DimensionID>Scholarship Dues</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e1e18786-a280-49ef-a6e1-cc312ecdacae">
+          <AttributeID>Scholarship Dues Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8c357881-9100-4e9c-8494-c87c8392386f">
+          <AttributeID>Amount</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="012baa1a-4fc4-44b3-98f2-ce6c8b91a164">
+          <AttributeID>Scholarship Type</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2293a15b-fb73-45eb-b661-c17202c57df1">
+          <AttributeID>Remarks</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="214c426c-123e-4d6b-8e58-d8471614652d">
+      <ID>Fee Concession</ID>
+      <Name>Fee Concession</Name>
+      <DimensionID>Fee Concession</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="fe7205e9-b211-43bb-90c4-7fab8f9aae76">
+          <AttributeID>Fee Conc Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ab21332c-debd-44b5-8e7a-41353424a319">
+          <AttributeID>Concession Type</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b69cd492-b164-4186-bc77-6b4af7d9b762">
+          <AttributeID>Amount</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="ad94e8c3-f86a-484a-a5ec-ff58e8f5735a">
+      <ID>Fee Ft</ID>
+      <Name>Fee Ft</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="b5e0d9ef-8822-4603-bb7c-aba8617cfc6e">
+          <ID>Scholarship Sum</ID>
+          <Name>Scholarship Sum</Name>
+          <Source dwd:design-time-name="1466f6f6-3dae-4331-96a9-37931255a096">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="3a67cfc4-77e6-4ed6-9f52-70fa2b87ef59">
+              <TableID>dbo_fee_ft</TableID>
+              <ColumnID>scholarship_sum</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f07fed7d-4a5b-4b2b-afdc-a22ca742e887">
+          <ID>Refund Amount</ID>
+          <Name>Refund Amount</Name>
+          <Source dwd:design-time-name="2b3ee621-6e35-45ee-ab7d-eae2d8233cb7">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ee60a7d5-4bf3-4d62-a0d6-bc125b24a555">
+              <TableID>dbo_fee_ft</TableID>
+              <ColumnID>refund_amount</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="ba9df884-efa9-4d8e-b352-c78ec930ffc3">
+          <ID>Dues Amount</ID>
+          <Name>Dues Amount</Name>
+          <Source dwd:design-time-name="8702247f-93e9-42b7-9ed0-2f468e38562a">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="72d69dc3-720d-4bf4-aed3-114c4f375eaf">
+              <TableID>dbo_fee_ft</TableID>
+              <ColumnID>dues_amount</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="4ce79518-80ee-4ca2-85cd-36e43cd78354">
+          <ID>Concession Amount</ID>
+          <Name>Concession Amount</Name>
+          <Source dwd:design-time-name="c67899bc-8111-4e5d-9c35-c15374c58465">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d2820749-76ae-440e-8787-e0e1db0a88fc">
+              <TableID>dbo_fee_ft</TableID>
+              <ColumnID>concession_amount</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="62fccb2e-e859-4886-8380-1d383d40259d">
+          <ID>Debit Amount</ID>
+          <Name>Debit Amount</Name>
+          <Source dwd:design-time-name="48243158-99e4-455c-9795-ce78dd3dc576">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2fdd58ee-e31b-46ea-9a4e-004efd2acb29">
+              <TableID>dbo_fee_ft</TableID>
+              <ColumnID>debit_amount</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="edfa8aa6-c374-429a-8c15-38e9379c0d08">
+          <ID>Credit Amount</ID>
+          <Name>Credit Amount</Name>
+          <Source dwd:design-time-name="2386359c-3356-47a9-9db2-9128b91e843f">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="fa0abf92-212e-4c86-919a-7ce5afa9edb9">
+              <TableID>dbo_fee_ft</TableID>
+              <ColumnID>credit_amount</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="ee177025-1917-4071-9ffa-074c0845d86d">
+          <ID>Fee Ft Count</ID>
+          <Name>Fee Ft Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="75cad76d-3f37-4479-91d9-39eb24adf1da">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="895a432e-a507-40af-9585-2a7980c2cf70">
+              <TableID>dbo_fee_ft</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="2808ebe6-890d-47b6-97c8-b1a1e5cc77b8">
+          <CubeDimensionID>Scholarship Dues</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a4a7e2e5-4bba-4a3f-94a6-98908c1f70b7">
+              <AttributeID>Scholarship Dues Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="723cfc7a-0131-4012-b201-4c6eff44ac7c">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b94658b1-b765-48a3-bfbd-6047a8db91f6">
+                    <TableID>dbo_fee_ft</TableID>
+                    <ColumnID>scholarship_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="fdf73123-6f8b-4842-8682-c062da37c1cc">
+          <CubeDimensionID>Fee Concession</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="00a58298-97e2-4c66-afb9-a68780f8daad">
+              <AttributeID>Fee Conc Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c4099aa5-0e56-44a0-827a-8f136caff1a3">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f2d5e282-f2a3-406a-96df-f060daaa8eb3">
+                    <TableID>dbo_fee_ft</TableID>
+                    <ColumnID>concession_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="eedd5527-6414-47f5-845b-2421a9b9559b">
+          <CubeDimensionID>Dues</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8b7f3bb7-4691-4647-a554-f3801a9272ec">
+              <AttributeID>Dues Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1719616f-690c-44e2-9503-3f8d4e8dd14d">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e32af0b8-c212-4ddc-a213-b8048b1cf8e7">
+                    <TableID>dbo_fee_ft</TableID>
+                    <ColumnID>dues_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d94a926b-0be5-4b6a-a361-61e5c86a568b">
+          <CubeDimensionID>Refund</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7d4889d0-7ff5-434a-b977-670abcdf10d7">
+              <AttributeID>Refund Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ba7e518c-83ce-4557-993d-ed91cf96cccf">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fbb12d36-b308-42cf-b8ba-1154c14495cf">
+                    <TableID>dbo_fee_ft</TableID>
+                    <ColumnID>refund_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ee43ebef-86d0-46f0-b0e3-47c643ae0978">
+          <CubeDimensionID>Time</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="100072a3-fc52-4b69-9dfc-987d6716fbcf">
+              <AttributeID>Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="653d727a-7957-49fd-9d83-e679f6006092">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="51d91563-51fc-48ea-a97d-95b6fee34841">
+                    <TableID>dbo_fee_ft</TableID>
+                    <ColumnID>time_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="cf0637dc-c9c4-48b0-848a-5af794b01016">
+    <DataSourceViewID>Fee Records</DataSourceViewID>
+  </Source>
+</Cube>
